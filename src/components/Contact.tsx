@@ -6,6 +6,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Github, Linkedin, Mail, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
+const EMAIL = "seneleyty113@gmail.com";
+const WHATSAPP = "785225400";
+
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -15,19 +18,25 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Message envoyé !",
-        description: "Je vous répondrai dans les plus brefs délais.",
-      });
-      setFormData({ name: "", email: "", message: "" });
-      setIsSubmitting(false);
-    }, 1000);
+    // Création du lien mailto: avec les données du formulaire
+    const subject = `Message de ${formData.name} via le portfolio`;
+    const body = `De: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
+    const mailtoLink = `mailto:${EMAIL}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    // Ouvrir le client mail
+    window.location.href = mailtoLink;
+
+    // Réinitialiser le formulaire
+    setFormData({ name: "", email: "", message: "" });
+    toast({
+      title: "Redirection vers votre client mail",
+      description: "Un nouvel email va s'ouvrir avec vos informations.",
+    });
   };
 
   const handleChange = (
@@ -43,14 +52,14 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "contact@exemple.com",
-      link: "mailto:contact@exemple.com",
+      value: EMAIL,
+      link: `mailto:${EMAIL}`,
     },
     {
       icon: Phone,
       label: "WhatsApp",
-      value: "+221 XX XXX XX XX",
-      link: "https://wa.me/221XXXXXXXXX",
+      value: WHATSAPP,
+      link: `https://wa.me/221${WHATSAPP}`,
     },
     {
       icon: Linkedin,
@@ -73,7 +82,10 @@ const Contact = () => {
           {/* Section Title */}
           <div className="text-center mb-12 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Me <span className="gradient-text">contacter</span>
+              Me{" "}
+              <span className="gradient-text" style={{ color: "inherit" }}>
+                contacter
+              </span>
             </h2>
             <p className="text-muted-foreground text-lg">
               Discutons de votre prochain projet
@@ -213,3 +225,4 @@ const Contact = () => {
 };
 
 export default Contact;
+          
