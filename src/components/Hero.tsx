@@ -15,11 +15,6 @@ const Hero = () => {
       id="home"
       className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16"
     >
-      {/* Background gradient */}
-      <div
-        className="absolute inset-0 -z-10"
-        style={{ background: "var(--gradient-hero)" }}
-      />
 
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -88,7 +83,6 @@ const Hero = () => {
           {/* Hero Image */}
           <div className="relative animate-scale-in">
             <div className="relative w-full max-w-md mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-2xl blur-2xl opacity-30 animate-float" />
               <img
                 src={heroImage}
                 alt="Developer portrait"

@@ -68,7 +68,7 @@ const Projects = () => {
           {/* Section Title */}
           <div className="text-center mb-12 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Mes <span className="gradient-text">projets</span>
+              Mes <span className="text-blue-600">projets</span>
             </h2>
             <p className="text-muted-foreground text-lg">
               Découvrez mes réalisations déployées
@@ -90,7 +90,7 @@ const Projects = () => {
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
 
                 <CardHeader>

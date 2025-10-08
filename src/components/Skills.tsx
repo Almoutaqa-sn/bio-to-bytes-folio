@@ -57,7 +57,7 @@ const Skills = () => {
           {/* Section Title */}
           <div className="text-center mb-12 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Mes <span className="gradient-text">compétences</span>
+              Mes <span className="text-blue-600">compétences</span>
             </h2>
             <p className="text-muted-foreground text-lg">
               Technologies et savoir-faire
@@ -80,7 +80,7 @@ const Skills = () => {
                   >
                     <CardHeader>
                       <CardTitle className="flex items-center gap-3">
-                        <div className="p-2 rounded-lg bg-gradient-to-r from-primary to-accent">
+                        <div className="p-2 rounded-lg bg-blue-600">
                           <Icon className="w-5 h-5 text-white" />
                         </div>
                         <span className="text-lg">{category.category}</span>
@@ -120,7 +120,7 @@ const Skills = () => {
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
                     <CardContent className="p-6">
-                      <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-primary to-accent mb-3">
+                      <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 mb-3">
                         <Icon className="w-6 h-6 text-white" />
                       </div>
                       <p className="font-medium text-sm">{skill.name}</p>

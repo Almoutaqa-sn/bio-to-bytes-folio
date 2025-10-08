@@ -49,13 +49,13 @@ const Journey = () => {
   const getColorByType = (type: string) => {
     switch (type) {
       case "formation":
-        return "from-blue-500 to-blue-600";
+        return "bg-blue-600";
       case "certification":
-        return "from-purple-500 to-purple-600";
+        return "bg-green-600";
       case "experience":
-        return "from-green-500 to-green-600";
+        return "bg-red-600";
       default:
-        return "from-primary to-accent";
+        return "bg-blue-600";
     }
   };
 
@@ -66,7 +66,7 @@ const Journey = () => {
           {/* Section Title */}
           <div className="text-center mb-12 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Mon <span className="gradient-text">parcours</span>
+              Mon <span className="text-blue-600">parcours</span>
             </h2>
             <p className="text-muted-foreground text-lg">
               Formation et certifications
@@ -76,7 +76,7 @@ const Journey = () => {
           {/* Timeline */}
           <div className="relative">
             {/* Vertical Line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary to-accent hidden md:block" />
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-600 hidden md:block" />
 
             <div className="space-y-8">
               {timeline.map((item, index) => {
@@ -112,7 +112,7 @@ const Journey = () => {
                             {item.badges.map((badge, idx) => (
                               <Badge
                                 key={idx}
-                                className="bg-gradient-to-r from-primary to-accent text-white"
+                                className="bg-blue-600 text-white"
                               >
                                 {badge}
                               </Badge>

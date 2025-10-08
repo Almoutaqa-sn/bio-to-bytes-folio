@@ -27,7 +27,7 @@ const About = () => {
           {/* Section Title */}
           <div className="text-center mb-12 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              À propos de <span className="gradient-text">moi</span>
+              À propos de <span className="text-blue-600">moi</span>
             </h2>
             <p className="text-muted-foreground text-lg">
               Un parcours atypique au service de l'innovation
@@ -64,7 +64,7 @@ const About = () => {
                   className="border-none shadow-lg hover:shadow-xl transition-all hover:-translate-y-2"
                 >
                   <CardContent className="p-6 text-center">
-                    <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-primary to-accent mb-4">
+                    <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-blue-600 mb-4">
                       <Icon className="w-7 h-7 text-white" />
                     </div>
                     <h3 className="text-xl font-semibold mb-2">{item.title}</h3>

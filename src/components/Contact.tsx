@@ -186,7 +186,7 @@ ${formData.message}`;
                         rel="noopener noreferrer"
                         className="flex items-center gap-4 p-4 rounded-lg hover:bg-secondary/50 transition-colors group"
                       >
-                        <div className="p-3 rounded-full bg-gradient-to-r from-primary to-accent group-hover:shadow-lg transition-shadow">
+                        <div className="p-3 rounded-full bg-blue-600 group-hover:shadow-lg transition-shadow">
                           <Icon className="w-5 h-5 text-white" />
                         </div>
                         <div>
@@ -202,7 +202,7 @@ ${formData.message}`;
               </Card>
 
               {/* Call to Action */}
-              <Card className="border-none shadow-lg bg-gradient-to-br from-primary to-accent text-white">
+              <Card className="border-none shadow-lg bg-green-600 text-white">
                 <CardContent className="p-6 text-center">
                   <h3 className="text-xl font-bold mb-2">Prêt à collaborer ?</h3>
                   <p className="mb-4 text-white/90">

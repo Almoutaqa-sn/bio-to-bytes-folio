@@ -46,7 +46,7 @@ const Navbar = () => {
               e.preventDefault();
               scrollToSection("#home");
             }}
-            className="text-xl font-bold gradient-text"
+            className="text-xl font-bold text-blue-600"
           >
             Portfolio
           </a>

@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             {/* Brand */}
             <div>
-              <h3 className="text-2xl font-bold mb-4 gradient-text">Portfolio</h3>
+              <h3 className="text-2xl font-bold mb-4 text-blue-600">Portfolio</h3>
               <p className="text-background/70 leading-relaxed">
                 Développeur web et mobile passionné, transformant vos idées en
                 solutions digitales innovantes.
