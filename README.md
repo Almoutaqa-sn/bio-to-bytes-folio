@@ -1,31 +1,31 @@
-# Welcome to your Lovable project
+# Portfolio - Développeur Web & Mobile
 
-## Project info
+## Technologies utilisées
 
-**URL**: https://lovable.dev/projects/1a45a05d-4d40-4227-9955-faa28ae78d88
+Ce projet est construit avec :
 
-## How can I edit this code?
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/1a45a05d-4d40-4227-9955-faa28ae78d88) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Installation et démarrage
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Installer les dépendances
+npm install
 
+# Démarrer le serveur de développement
+npm run dev
+
+# Construire pour la production
+npm run build
+```
+
+## Contact
+
+Pour toute question ou opportunité de collaboration, vous pouvez me contacter à seneleyty113@gmail.com
 # Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
 

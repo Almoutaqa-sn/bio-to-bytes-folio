@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -74,8 +74,7 @@ const Footer = () => {
                 © {currentYear} Portfolio. Tous droits réservés.
               </p>
               <p className="flex items-center gap-2">
-                Conçu avec <Heart className="w-4 h-4 fill-red-500 text-red-500" /> et
-                React
+                Développé avec React
               </p>
             </div>
           </div>
@@ -93,3 +92,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

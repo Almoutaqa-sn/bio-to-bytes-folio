@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import heroImage from "@/assets/mouride_guide_dev.jpeg";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -89,7 +90,7 @@ const Hero = () => {
             <div className="relative w-full max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-2xl blur-2xl opacity-30 animate-float" />
               <img
-                src="/placeholder.svg"
+                src={heroImage}
                 alt="Developer portrait"
                 className="relative rounded-2xl shadow-2xl w-full"
               />

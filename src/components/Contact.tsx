@@ -20,19 +20,24 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     // Création du lien mailto: avec les données du formulaire
     const subject = `Message de ${formData.name} via le portfolio`;
-    const body = `De: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
-    const mailtoLink = `mailto:${EMAIL}?subject=${encodeURIComponent(
+    const body = `De: ${formData.name}
+Email: ${formData.email}
+
+Message:
+${formData.message}`;
+
+    // Ouvrir le client mail de l'utilisateur
+    window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
 
-    // Ouvrir le client mail
-    window.location.href = mailtoLink;
-
-    // Réinitialiser le formulaire
+    // Réinitialiser le formulaire et afficher le toast
     setFormData({ name: "", email: "", message: "" });
+    setIsSubmitting(false);
     toast({
       title: "Redirection vers votre client mail",
       description: "Un nouvel email va s'ouvrir avec vos informations.",
@@ -225,4 +230,4 @@ const Contact = () => {
 };
 
 export default Contact;
-          
+                   
